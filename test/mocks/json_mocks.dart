@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_memes_ttd_bloc/core/errors/failures.dart';
+import 'package:flutter_memes_ttd_bloc/core/errors/failure.dart';
 
 Response mockMemeFailureResponse = Response(
   statusCode: 400,
@@ -40,4 +40,3 @@ Response mockMemeResponse = Response(
 );
 
 
-final mockDiofailure = Failure(message: "Server Failure");

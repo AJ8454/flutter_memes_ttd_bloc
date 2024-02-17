@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_memes_ttd_bloc/core/errors/failures.dart';
+import 'package:flutter_memes_ttd_bloc/core/errors/failure.dart';
 import 'package:flutter_memes_ttd_bloc/core/usecases/empty_params.dart';
 import 'package:flutter_memes_ttd_bloc/core/usecases/usecases.dart';
 import 'package:flutter_memes_ttd_bloc/domain/entities/memes.dart';

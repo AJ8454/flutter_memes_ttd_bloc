@@ -36,7 +36,7 @@ void main() {
       setUpSuccessFromGetDio(mockMemeFailureResponse);
       final result = await memeRemoteDataSource.getMemes();
       debugPrint("$result");
-      expect(result.fold((l) => l.message, (r) => r), mockDiofailure.message);
+      expect(result.fold((l) => l, (r) => r), mockfailure);
     });
   });
 }

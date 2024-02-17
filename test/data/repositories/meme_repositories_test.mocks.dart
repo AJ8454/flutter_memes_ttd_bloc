@@ -6,7 +6,7 @@
 import 'dart:async' as _i4;
 
 import 'package:dartz/dartz.dart' as _i2;
-import 'package:flutter_memes_ttd_bloc/core/errors/failures.dart' as _i5;
+import 'package:flutter_memes_ttd_bloc/core/errors/failure.dart' as _i5;
 import 'package:flutter_memes_ttd_bloc/data/data_sources/remote_data_source.dart'
     as _i3;
 import 'package:flutter_memes_ttd_bloc/data/models/meme_model.dart' as _i6;

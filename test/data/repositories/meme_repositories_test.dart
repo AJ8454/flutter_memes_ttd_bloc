@@ -20,7 +20,7 @@ void main() {
 
   void setUpFailureForGetMeme() {
     when(mockMemeRemoteDataSource.getMemes()).thenAnswer((value) async {
-      return Left(mockMemeFailure);
+      return const Left(mockfailure);
     });
   }
 
@@ -44,7 +44,7 @@ void main() {
 
       final result = await mockMemeRepositoriesImpl.getMemes();
 
-      expect(result.fold((l) => l, (r) => r), mockMemeFailure);
+      expect(result.fold((l) => l, (r) => r), mockfailure);
     });
   });
 }

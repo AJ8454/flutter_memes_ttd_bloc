@@ -1,8 +1,8 @@
-import 'package:flutter_memes_ttd_bloc/core/errors/failures.dart';
+import 'package:flutter_memes_ttd_bloc/core/errors/failure.dart';
 import 'package:flutter_memes_ttd_bloc/data/models/meme_model.dart';
 import 'package:flutter_memes_ttd_bloc/domain/entities/memes.dart';
 
-final mockfailure = Failure(message: "Server Failure");
+const mockfailure = Failure(message: "Server Failure");
 
 final mockListOfMemes = [
   Meme(
@@ -34,5 +34,3 @@ final mockMemeEntities = Meme(
   height: 12,
   boxCount: 2,
 );
-
-final mockMemeFailure = Failure(message: "Server Failure");
