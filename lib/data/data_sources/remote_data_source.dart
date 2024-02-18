@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_memes_ttd_bloc/core/constants/contants.dart';
@@ -19,10 +17,9 @@ class MemeRemoteDataSourceImpl extends MemeRemoteDataSource {
   Future<Either<Failure, List<MemeModel>>> getMemes() async {
     final response = await dio.get(AppConstants.baseUrl);
     if (response.statusCode == 200) {
-      return Right(
-          listMemeModelFromJson(jsonEncode(response.data['data']['memes'])));
+      return Right(listMemeModelFromJson((response.data['data']['memes'])));
     } else {
-      return Left(Failure(message: "Server Failure"));
+      return const Left(Failure(message: "Server Failure"));
     }
   }
 }

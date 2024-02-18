@@ -20,7 +20,7 @@ void main() {
 
   void setUpFailureForGetMemes() async {
     when(mockMemeRepositories.getMemes()).thenAnswer((value) async {
-      return Left(mockfailure);
+      return const Left(mockfailure);
     });
   }
 

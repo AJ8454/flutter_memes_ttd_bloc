@@ -10,8 +10,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'meme_model.freezed.dart';
 part 'meme_model.g.dart';
 
-List<MemeModel> listMemeModelFromJson(String str) =>
-    List<MemeModel>.from(json.decode(str).map((x) => MemeModel.fromJson(x)));
+List<MemeModel> listMemeModelFromJson(dynamic str) => List<MemeModel>.from(
+    json.decode(jsonEncode(str)).map((x) => MemeModel.fromJson(x)));
 
 String listMemeModelToJson(List<dynamic> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
